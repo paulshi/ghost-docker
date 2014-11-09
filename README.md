@@ -13,9 +13,7 @@ This repository contains **Dockerfile** of [Ghost](https://www.ghost.org/) for [
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/ghost/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull dockerfile/ghost`
-
-   (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/ghost" github.com/dockerfile/ghost`)
+2. You can build an image from Dockerfile: `docker build -t="dockerfile/ghost" github.com/paulshi/ghost-docker`)
 
 
 ### Usage
