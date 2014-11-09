@@ -17,6 +17,7 @@ RUN \
   cd /ghost && \
   npm install -g grunt-cli && \
   npm install && \
+  grunt init && \
   grunt prod && \
   npm install --production && \
   sed 's/127.0.0.1/0.0.0.0/' /ghost/config.example.js > /ghost/config.js && \
