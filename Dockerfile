@@ -14,6 +14,8 @@ RUN \
   unzip master.zip -d /ghost && \
   rm -f master.zip && \
   cd /ghost && \
+  mv Ghost-master/* . && \
+  rm -rf Ghost-master && \
   npm install --production && \
   sed 's/127.0.0.1/0.0.0.0/' /ghost/config.example.js > /ghost/config.js && \
   useradd ghost --home /ghost
